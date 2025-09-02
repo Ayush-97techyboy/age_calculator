@@ -1,0 +1,132 @@
+.content {
+    width: 750px;
+    /* Desktop */
+    background-color: #f5ecec;
+    /* Light gray background */
+    border-radius: 10px 10px 130px 10px;
+    /* More rounded bottom right corner */
+    padding: 20px;
+    /* Padding around content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    position: relative;
+    /* For positioning the arrow */
+}
+
+@media (max-width: 768px) {
+    .content {
+        width: 390px;
+        /* Mobile */
+    }
+}
+
+.error {
+    color: red;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input input {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #e2e8f0;
+    /* Light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px;
+    /* Padding inside input */
+    margin: 5px;
+    /* Margin between inputs */
+    width: 60px;
+    /* Fixed width for inputs */
+}
+
+#yearIn {
+    width: 100px; /* Increased width for year input */
+}
+
+.inp {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #553c9a;
+    /* Purple background */
+    color: white;
+    /* White text */
+    padding: 10px 20px;
+    /* Padding for button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    height: 50px;
+}
+
+button:hover {
+    background-color: #553c9a;
+    /* Darker purple on hover */
+}
+
+.results p {
+    display: flex;
+    font-weight: bold;
+    /* Bold text for results */
+    /* font-variant: small-caps; */
+    font-size: xx-large;
+    color: #4a5568;
+    /* Dark gray for results */
+}
+
+.results p::before {
+    content: '--';
+    /* Hyphen before the age text */
+    color: #6b46d1;
+    /* Violet color for hyphens */
+}
+
+.results.calculated p::before {
+    content: '';
+}
+
+.down-arrow {
+    /* position: absolute; */
+    top: 50%;
+    right: 0;
+    /* transform: translate(50%, -50%); */
+    background-color: #6b46d1;
+    /* Violet background */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.down-arrow::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    content: '';
+    /* display: block; */
+    width: 16px;
+    height: 16px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+    /* margin-top: ; */
+    margin-bottom: 4px;
+
+}
